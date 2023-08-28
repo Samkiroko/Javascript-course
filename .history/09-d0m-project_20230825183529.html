@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Project</title>
+  </head>
+  <body>
+    <div>
+      <p>YouTube Subscribe Button</p>
+      <button
+        onclick="
+       
+      "
+        class="js-subscribe"
+      >
+        Subscribe
+      </button>
+    </div>
+    <script>
+      function subscribe() {
+        const buttonElement = document.querySelector('.js-subscribe');
+
+        if (buttonElement.innerText === 'subscribe') {
+          buttonElement.innerText = 'unsubscribe';
+          buttonElement.style.backgroundColor = 'red';
+          buttonElement.style.color = 'white';
+        } else {
+          buttonElement.innerText = 'subscribe';
+          buttonElement.style.backgroundColor = 'blue';
+          buttonElement.style.color = 'white';
+        }
+      }
+    </script>
+  </body>
+</html>
